@@ -361,7 +361,7 @@ describe("Testing the voting app", () => {
           .rpc();
         expect.fail("Expected withdrawal to fail - unauthorized user");
       } catch (err) {
-        expectAnchorErrorCode(err, "UnauthourizedAcccess");
+        expectAnchorErrorCode(err, "UnauthorizedAccess");
       }
     });
   });
